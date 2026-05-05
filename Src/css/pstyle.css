@@ -1,1 +1,29 @@
+.dtl-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    align-items: center;
+}
 
+.dtl-error{
+    border-color: red !important;
+}
+
+.dtl-duplicate input{
+    background: blue;
+    color: white;
+}
+
+
+.dtl-handle {
+    cursor: grab;
+    color: #888;
+}
+
+.dtl-row:active .dtl-handle {
+    cursor: grabbing;
+}
+
+.dtl-drag-ghost {
+    opacity: 0.5;
+}
