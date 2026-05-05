@@ -1,0 +1,31 @@
+{
+  "name": "APEX Dynamic List Pro",
+  "version": "1.0.0",
+  "description": "A powerful multi-value input and drag & drop reorder plugin for Oracle APEX supporting JSON and SQL data sources.",
+  "keywords": ["input", "multi value", "drag drop", "sortable", "json", "reorder"],
+  "homepage": "https://github.com/wael-ahmad/APEX-Dynamic-List-Pro",
+  "bugs": {
+    "url": "https://github.com/wael-ahmad/APEX-Dynamic-List-Pro/issues"
+  },
+  "license": "MIT",
+  "commercial": "No",
+  "author": {
+    "name": "Wael Ahmad",
+    "url": "https://github.com/wael-ahmad"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wael-ahmad/APEX-Dynamic-List-Pro.git"
+  },
+  "oracle": {
+    "apex": {
+      "versions": ["22.2", "23.x", "24.x"],
+      "plugin": {
+        "internalName": "DYNAMIC_INPUT_LIST",
+        "type": "item",
+        "demo": "https://apex.oracle.com/pls/apex/f?p=YOUR_APP_ID",
+        "previewImage": "https://raw.githubusercontent.com/YOUR_USERNAME/apex-dynamic-text-list/main/preview.gif"
+      }
+    }
+  }
+}
