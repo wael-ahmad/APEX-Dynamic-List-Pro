@@ -33,7 +33,13 @@ A powerful, drag & drop enabled multi-value input plugin for Oracle APEX that su
 
 ## 📸 Demo Application
 
-[![Demo Application](https://img.shields.io/badge/🚀_Live_Demo-Try_It_Now-2c9c8c?style=for-the-badge&logo=oracle&logoColor=white&target="_blank")](https://oracleapex.com/ords/r/wael_plugins/apex-dynamic-list-pro)
+Try the live demo application to explore the plugin features:
+
+<p align="center">
+  <a href="https://oracleapex.com/ords/r/wael_plugins/apex-dynamic-list-pro" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Try_It_Now-2c9c8c?style=for-the-badge&logo=oracle&logoColor=white" alt="Live Demo">
+  </a>
+</p>
 
 ---
 
