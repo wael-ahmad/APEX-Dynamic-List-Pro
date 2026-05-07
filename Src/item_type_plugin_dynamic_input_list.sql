@@ -33,7 +33,7 @@ prompt APPLICATION 104 - TG_BOT
 -- Application Export:
 --   Application:     104
 --   Name:            TG_BOT
---   Date and Time:   00:29 Wednesday May 6, 2026
+--   Date and Time:   21:47 Wednesday May 6, 2026
 --   Exported By:     APEX_24
 --   Flashback:       0
 --   Export Type:     Component Export
@@ -344,7 +344,7 @@ unistr('        -- \D83D\DD25 Return safe JSON'),
 ,p_ajax_function=>'ajax_get_data'
 ,p_standard_attributes=>'VISIBLE'
 ,p_substitute_attributes=>true
-,p_version_scn=>1212640656
+,p_version_scn=>1213690169
 ,p_subscribe_plugin_settings=>true
 ,p_version_identifier=>'1.0.0'
 ,p_about_url=>'https://github.com/wael-ahmad/APEX-Dynamic-List-Pro'
@@ -404,6 +404,9 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'I'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>Number of input rows displayed initially when no value exists.</p>',
+'<strong>Used only in Input Mode.</strong>'))
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(732554928283717686)
@@ -423,6 +426,9 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'I'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>Maximum number of rows allowed.</p>',
+'<p>When reached, the add button will be disabled and an event is triggered.</p>'))
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(732555637903725882)
@@ -437,6 +443,7 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_default_value=>'Label'
 ,p_is_translatable=>true
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_help_text=>'Label displayed above the component.'
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(732555988527737112)
@@ -452,6 +459,7 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_is_translatable=>false
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553570686705745)
+,p_help_text=>'Controls the width and layout style using APEX CSS classes.'
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(732556230534737907)
@@ -492,6 +500,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_expression=>'I'
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553570686705745)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Defines position of add/remove buttons:</strong>',
+'<ul>',
+'    <li>Start: Before input field</li>',
+'    <li>End: After input field</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(732557808671747915)
@@ -521,6 +535,7 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_is_translatable=>false
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553570686705745)
+,p_help_text=>'Defines column width within APEX grid system.'
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(732561994948824674)
@@ -631,6 +646,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_expression=>'I'
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553952144705746)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Controls button appearance:</strong>',
+'<ul>',
+'    <li>Default (minimal)</li>',
+'    <li>Danger for Remove / Primary for Add (colored buttons)</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(732567544216842653)
@@ -660,6 +681,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_is_translatable=>false
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(733093462951182494)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Defines how values are stored:</strong>',
+'<ul>',
+'    <li>Delimited: Values joined using separator.</li>',
+'    <li>JSON: Stored as JSON array.</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(733095047838188402)
@@ -694,6 +721,8 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'D'
 ,p_attribute_group_id=>wwv_flow_imp.id(733093462951182494)
+,p_examples=>': OR ,'
+,p_help_text=>'Character used to separate values when Type = Delimited.'
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(733717816738779549)
@@ -713,6 +742,14 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_expression=>'I'
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(733728916181845752)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Defines validation applied to each value:</strong>',
+'<ul>',
+'    <li>None</li>',
+'    <li>Email</li>',
+'    <li>Phone</li>',
+'    <li>Regex</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(733719538022781106)
@@ -760,6 +797,7 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'R'
 ,p_attribute_group_id=>wwv_flow_imp.id(733728916181845752)
+,p_help_text=>'Custom regular expression used when Validation Type = Regex.'
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(733732141074874285)
@@ -778,6 +816,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'I'
 ,p_attribute_group_id=>wwv_flow_imp.id(733728916181845752)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Allows or prevents duplicate values:</strong>',
+'<ul>',
+'    <li>Yes: duplicates allowed</li>',
+'    <li>No: duplicates highlighted as invalid</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(734707212339805734)
@@ -793,6 +837,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_is_translatable=>false
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(734706246732800587)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Defines how the plugin behaves:</strong>',
+'<ul>',
+'    <li>Input: Allows users to enter multiple values dynamically.</li>',
+'    <li>Reorder: Displays a list (from JSON or SQL) and allows drag & drop reordering.</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(734707880940806545)
@@ -826,6 +876,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_expression=>'R'
 ,p_lov_type=>'STATIC'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>Defines the data source in Reorder Mode:</strong>',
+'<ul>',
+'    <li>JSON: Static JSON array.</li>',
+'    <li>SQL Query: Dynamic data from database.</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attr_value(
  p_id=>wwv_flow_imp.id(734711488482826219)
@@ -859,6 +915,15 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'S'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_examples=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>SELECT id, name FROM users ORDER BY name</p>',
+'<strong>You can use bind variables (e.g. :P1_ITEM) with Page Items to Submit.</strong>'))
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<strong>SQL query returning exactly two columns:</strong>',
+'<ul>',
+'    <li>First column: ID</li>',
+'    <li>Second column: Label</li>',
+'</ul>'))
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(734717830220850679)
@@ -877,6 +942,12 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'J'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_examples=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'[',
+'  {"id":1,"label":"James"},',
+'  {"id":2,"label":"John"}',
+']'))
+,p_help_text=>'<strong>JSON array used as data source.</strong>'
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(735491316454562417)
@@ -894,6 +965,10 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'S'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_examples=>'P1_ITEM_1,P1_ITEM_2'
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>Comma-separated list of page items sent during AJAX calls.</p>',
+'<p>Required when using bind variables in SQL query.</p>'))
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(736444730180248243)
@@ -912,6 +987,7 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'R'
 ,p_attribute_group_id=>wwv_flow_imp.id(732553255523705745)
+,p_help_text=>'Message displayed when no data is returned from the source.'
 );
 wwv_flow_imp_shared.create_plugin_attribute(
  p_id=>wwv_flow_imp.id(737062070985905013)
@@ -926,6 +1002,9 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_default_value=>'N'
 ,p_is_translatable=>false
 ,p_attribute_group_id=>wwv_flow_imp.id(733728916181845752)
+,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'Enables browser console logging for debugging purposes.',
+'<strong>Should be disabled in production.</strong>'))
 );
 wwv_flow_imp_shared.create_plugin_event(
  p_id=>wwv_flow_imp.id(737080326318102023)
