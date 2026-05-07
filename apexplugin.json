@@ -11,6 +11,7 @@
   "commercial": "No",
   "author": {
     "name": "Wael Ahmad",
+    "email": "wael.g.ahmad@gmail.com"
     "url": "https://github.com/wael-ahmad"
   },
   "repository": {
@@ -18,6 +19,7 @@
     "url": "https://github.com/wael-ahmad/APEX-Dynamic-List-Pro.git"
   },
   "oracle": {
+    "versions" : ["19c", "21c"],
     "apex": {
       "versions": ["22.2", "23.x", "24.x"],
       "plugin": {
