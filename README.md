@@ -68,3 +68,7 @@ A powerful, drag & drop enabled multi-value input plugin for Oracle APEX that su
 **JavaScript Code:**
 ```javascript
 apex.dtl_reorder.refresh("P1_ITEM");
+
+## 📸 Demo Application
+
+[![Demo Application](https://img.shields.io/badge/🚀_Live_Demo-Try_It_Now-2c9c8c?style=for-the-badge&logo=oracle&logoColor=white)](https://oracleapex.com/ords/r/wael_plugins/apex-dynamic-list-pro)
