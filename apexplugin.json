@@ -1,5 +1,5 @@
 {
-  "name": "APEX Dynamic List Pro",
+  "name": "ApexDynamicListPro",
   "version": "1.0",
   "description": "A powerful multi-value input and drag & drop reorder plugin for Oracle APEX supporting JSON and SQL data sources.",
   "keywords": ["input", "multi value", "drag drop", "sortable", "json", "reorder"],
