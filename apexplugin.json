@@ -27,7 +27,7 @@
       "plugin": {
         "internalName": "DYNAMIC_INPUT_LIST",
         "type": "item",
-        "demo": "https://oracleapex.com/ords/f?p=241067:1:9334571509891:::::",
+        "demo": "",
         "previewImage": "https://raw.githubusercontent.com/wael-ahmad/apex-dynamic-list-pro/master/preview.gif"
       }
     }
