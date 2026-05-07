@@ -21,7 +21,7 @@
   "oracle": {
     "versions" : ["19c", "21c"],
     "apex": {
-      "versions": ["22.2", "23.x", "24.x"],
+      "versions": ["24.2.3"],
       "plugin": {
         "internalName": "DYNAMIC_INPUT_LIST",
         "type": "item",
