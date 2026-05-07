@@ -23,8 +23,8 @@
       "plugin": {
         "internalName": "DYNAMIC_INPUT_LIST",
         "type": "item",
-        "demo": "https://apex.oracle.com/pls/apex/f?p=YOUR_APP_ID",
-        "previewImage": "https://raw.githubusercontent.com/YOUR_USERNAME/apex-dynamic-text-list/main/preview.gif"
+        "demo": "https://oracleapex.com/ords/r/wael_plugins/apex-dynamic-list-pro",
+        "previewImage": "https://github.com/wael-ahmad/APEX-Dynamic-List-Pro/blob/main/preview.gif"
       }
     }
   }
